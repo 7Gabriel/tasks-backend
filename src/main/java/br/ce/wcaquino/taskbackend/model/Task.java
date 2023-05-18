@@ -11,7 +11,9 @@ import javax.persistence.Id;
 public class Task {
 
 	private Long id;
-	
+
+
+
 	@Column(nullable = false)
 	private String task;
 	
@@ -19,6 +21,11 @@ public class Task {
 	private LocalDate dueDate;
 	
 	public Task() {}
+
+	public Task(String task, LocalDate dueDate) {
+		this.task = task;
+		this.dueDate = dueDate;
+	}
 
 	@Id
 	@GeneratedValue
