@@ -31,7 +31,7 @@ public class DateUtilsTest extends TestCase {
     @Test
     public void testIsEqualDate() {
         // Teste para a data atual
-        LocalDate currentDate = LocalDate.of(2023, 5, 18);
+        LocalDate currentDate = LocalDate.now();
         assertTrue(DateUtils.isEqualOrFutureDate(currentDate));
 
     }
